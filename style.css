@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 :root {
-    --crimson-red: hsl(347, 78%, 50%);
+    --crimson-red: hsl(347, 79%, 33%);
     --light-crimson-red: hsl(347, 100%, 89%);
 }
 
@@ -227,31 +227,16 @@ li:hover {
     cursor: pointer;
 }
 
-.fa-windows:hover {
-    height: 150px;
-    width: 150px;
-}
-
-.fa-apple:hover {
-    height: 150px;
-    width: 150px;
-}
-
-.fa-linux:hover {
-    height: 150px;
-    width: 150px;
-}
-
 .fa-windows:hover path{
     fill: #50c8e8;
 }
 
 .fa-apple:hover path {
-    fill: #ffffff;
+    fill: #b4b4b4;
 }
 
 .fa-linux:hover path {
-    fill: #e8c050;
+    fill: #ffdc7b;
 }
 
 /* Footer y contactar al soporte estilo */
@@ -372,3 +357,338 @@ textarea:focus {
     color: rgb(28, 31, 30);
     transition: 0.2s 0.1s;
   }
+
+
+/* Menu hamburguesa para nav bar  */
+
+.burger-king {
+    display: none;
+}
+
+.burger-king div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+
+  /* Media query */
+
+@media only screen and (max-width:1024px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    .links-nav {
+        width: 60%;
+    }
+    
+    video {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -999;
+    }
+
+    .hero-img {
+        padding-top: 15em;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding-left: 22em;
+    }
+
+    .hero-content {
+        padding-left: 22em;
+    }
+
+    .home h3 {
+        font-size: 3em;
+        line-height: 50px;
+    }
+
+    .home p {
+        padding-left: 5em;
+        padding-top: 1em;
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+    .gaming-info {
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        padding-left: 20em;
+        padding-top: 30em;
+    }
+
+    .info-1 {
+        padding-left: 5em;
+    }
+
+    .gaming-info h4 {
+        padding: 0;
+    }
+
+    .gaming-info p {
+        padding: 0;
+    }
+
+    .gaming-icon img {
+        width: 15em;
+    }
+
+    .overlay-info {
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: auto;
+        padding-left: 20em;
+    }
+
+    .overlay-info img {
+        width: 15em;
+    }
+
+    .about-info {
+        padding-top: 15em;
+        margin-left: 8em;
+
+    }
+    
+    .about-info h3 {
+        font-size: 4em;
+    }
+    
+    .about-info p {
+        padding: 0;
+        font-size: 1.2em;
+        width: 50vh;
+    }
+
+    .download-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 15em;
+        padding-left: 8em;
+    
+        text-align: center;
+    }
+    
+    .download-content h3 {
+        width: 50vh;
+    }
+
+    .download-content p {
+        width: 50vh;
+    }
+
+    .so-icons {
+        flex-direction: row;
+        width: 50vh;
+    }
+
+    .footer {
+        width: 75vh;
+    }
+
+    input {
+        width: 70vh;
+    }
+
+    form {
+        width: 70vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .hero-img {
+        padding-top: 15em;
+        justify-content: center;
+        align-items: center;
+
+        width: 10%;
+        padding-left: 13em;
+    }
+
+    .hero-content {
+        padding-left: 12em;
+    }
+
+    .home h3 {
+        font-size: 2em;
+        line-height: 50px;
+    }
+
+    .home p {
+        padding-left: 5em;
+        padding-top: 1em;
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .gaming-info {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding-left: 10em;
+    }
+
+    .gaming-info h4 {
+        padding: 0;
+    }
+
+    .gaming-info p {
+        padding: 0;
+    }
+
+    .gaming-icon img {
+        width: 15em;
+    }
+
+    .overlay-info {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding-left: 10em;
+    }
+
+    .overlay-info img {
+        width: 15em;
+    }
+
+
+
+    .overlay-info h4 {
+        padding: 0;
+    }
+    .overlay-info p {
+        padding: 0;
+    }
+
+    .about-info {
+        margin: 0;
+        padding-top: 7em;
+    }
+
+    .about-info h3 {
+        padding: 0;
+        font-size: 3em;
+    }
+
+    .about-info p {
+        width: 50vh;
+        margin: 0;
+    }
+
+    .links-nav {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background: rgba(226, 28, 71, 0.514);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    .links-nav li {
+        opacity: 0;
+    }
+
+    .burger-king {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .homeHero-video video {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .download-content {
+        padding: 0;
+
+    }
+
+    .download-info {
+        width: 50vh;
+        margin: 0;
+    }
+
+    .download-info h3 {
+        padding-top: 5em;
+        padding-left: 1.3em;
+        font-size: 2em;
+        width: 50vh;
+    }
+
+    .download-info p {
+        padding: 0;
+        margin-top: 2em;
+        margin-left: 0.5em;
+        width: 50vh;
+    }
+
+    .footer {
+        padding: 0;
+        margin: 0;
+        width: 60vh;
+    }
+
+    .footer h3 {
+        font-size: 2em;
+    }
+
+    .footer p {
+        padding: 0;
+    }
+
+    input {
+        width: 20vh;
+    }
+
+    form {
+        width: 20vh;
+    }
+
+    @keyframes navLinkFade{
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
