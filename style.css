@@ -1,0 +1,374 @@
+/* Import font, *, body, root, y medidas importantes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root {
+    --crimson-red: hsl(347, 78%, 50%);
+    --light-crimson-red: hsl(347, 100%, 89%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Estilos para el nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+
+    background: rgba(226, 28, 71, 0.514);
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.links-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 34%;
+
+    list-style: none;
+}
+
+.links-nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+li:hover {
+    border-bottom:1px solid #fff;
+}
+
+.logo {
+    width: 55%;
+}
+
+.logo img{
+    position: relative;
+    width: 4em;
+    height: 4em;
+}
+
+/* Estilos video/home */
+
+.homeHero-video {
+    padding: 50px 0px;
+}
+
+.homeHero-video video {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+
+/* ---------------------------------------------- */
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 15em;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 7em;
+    text-shadow: 0px 8px 7px rgba(0,0,0,0.85);
+    text-align: center;
+}
+
+.hero-content h3 {
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+}
+
+/* ---------------------------------------------- */
+
+.gaming-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 80%;
+    padding-top: 10em;
+    margin-left: 5em;
+}
+
+.gaming-info h4 {
+    font-size: 2em;
+}
+
+.gaming-info p {
+    padding-top: 2em;
+    font-size: 1.1em;
+}
+
+.gaming-icon img {
+    width: 80%;
+}
+
+/* ---------------------------------------------- */
+
+.overlay-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    padding-top: 15em;
+    margin-left: 15em;
+    width: 80%;
+}
+
+.overlay-info h4 {
+    font-size: 2em;
+}
+
+.overlay-info p {
+    padding-top: 2em;
+    font-size: 1.1em;
+}
+
+.overlay-info h4, p {
+    padding-right: 5em;
+}
+
+.overlay-icon img {
+    width: 80%;
+}
+
+/* About style */
+
+.about-section {
+    background: black;
+    display: flex;
+
+    text-align: center;
+}
+
+.about-info {
+    padding-top: 15em;
+    margin-left: 5em;
+}
+
+.about-info h3 {
+    font-size: 4em;
+}
+
+.about-info p {
+    padding-top: 2em;
+    font-size: 1.2em;
+}
+
+/* Descargar estilo */
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15em;
+
+    text-align: center;
+}
+
+.download-info h3 {
+    font-size: 3em;
+}
+
+.download-info p {
+    font-size: 1.8em;
+    padding-left: 5em;
+    padding-top: 2em;
+}
+
+.so-icons {
+    padding-top: 5em;
+}
+
+.so-icons svg {
+    height: 120px;
+    width: 120px;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.fa-windows:hover {
+    height: 150px;
+    width: 150px;
+}
+
+.fa-apple:hover {
+    height: 150px;
+    width: 150px;
+}
+
+.fa-linux:hover {
+    height: 150px;
+    width: 150px;
+}
+
+.fa-windows:hover path{
+    fill: #50c8e8;
+}
+
+.fa-apple:hover path {
+    fill: #ffffff;
+}
+
+.fa-linux:hover path {
+    fill: #e8c050;
+}
+
+/* Footer y contactar al soporte estilo */
+
+.footer-content {
+    margin-top: 15em;
+}
+
+.footer {
+    background: var(--crimson-red);
+    padding-top: 5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-svg {
+    fill: var(--crimson-red);
+}
+
+.footer h3 {
+    font-size: 3em;
+}
+
+.footer p {
+    font-size: 1.8em;
+    padding-left: 7em;
+}
+
+.form {
+    padding-top: 5em;
+}
+
+input {
+    width: 30em;
+    height: 3.5em;
+    border-radius: 5px;
+    
+    margin: 5px;
+    border: none;
+    background: var(--light-crimson-red);
+}
+
+input::placeholder {
+    padding: 1.5em;
+}
+
+input:focus {
+    color: black;
+    padding: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    width: 99%;
+    border-radius: 5px;
+    margin: 5px;
+
+    border: none;
+    background: var(--light-crimson-red);
+    resize: none;
+}
+
+textarea::placeholder {
+    padding: 1.5em;
+}
+
+textarea:focus {
+    color: black;
+    padding: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto 35px;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px 25px 15px;
+    min-width: 150px;
+  }
+    .btn span {         
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+  
+  /*--- btn-1 ---*/
+  .btn-1::before {
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+  }
+  .btn-1 span {
+    color: rgb(255,255,255);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
+  .btn-1 span:hover {
+    color: rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
